@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eventos</title>
+</head>
+<body>
+<a href="#" onmouseover="mostrarSaludo()">Este es mi link </a> <!--Pongo el evento y entre comillos pongo la funcion de javascript que queremos que se ejecute-->
+<br>
+<a href="#" onclick="sumar(1,2)">Este es mi link 2 </a>
+
+<br>
+<a href="#" onclick="restar()">Este es mi link 3 </a>
+
+<br>
+<a href="#" onmouseout="dividir()">Este es mi link 4 </a>
+<script type="text/javascript">
+	//Javascript fue realizado para ejecutar eventos para que funcione en conjunto con HTML Y CSS
+
+	/*Algunos elemntos de Javascript son los siguientes
+    
+    - onLoad (se produce al cargar el documento HTML y va en la etiqueta <body>)
+    - onUnload (se produce al abandonar el documento HTML y va en la etiqueta <body>)
+    - onMouseOver (se produce al pasar el mouse por el enlace y va en la etiqueta <a>)
+    - onMouseOut (se produce al sacar el mouse por encima del enlace y va en la etiqueta <a>
+    - onClick (se produce al clikear sobre un link o un campo de formulario y va en las etiquetas <form> y <a>)
+    - onSubmit (se produce al sacar el mouse por encima del enlace y va en la etiqueta <a>)
+    - onFocus (se produce al activar un campo de edicion de un formulario y va en la etiqueta <input>)
+    - onSelect (se produce al seleccionar un campo de edicion de un formulario y va en la etiqueta <input>)
+    - onBlur (se produce al deseleccionar un campo de edicion de un formulario y va en la etiqueta <input>)
+    - onChange (se produce al cambiar el contenido de un campo de edicion o seleccion de un formulario y va en las etiquetas <input> y <select>)
+
+	*/
+
+
+	function mostrarSaludo(){
+		alert("Hola Aaron");
+	}
+
+
+	function sumar(numero1,numero2){
+		console.log(numero1+numero2);
+	}
+
+	function restar(){
+		alert(5-6);
+	}
+
+	function dividir(){
+		alert(5/6);
+	}
+</script>
+</body>
+</html>
