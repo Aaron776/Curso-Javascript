@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Constructor</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//El constructor de una clase es una funcion que tiene como objetivo inicializar un objeto que vayamos a crear, el metodo constructor se ejecuta automaticamente al momento que creamos el objeto
+
+	class Auto{
+		constructor(modelo,kilometros){
+			this.modelo=modelo;
+			this.kilometros=kilometros;
+			alert("Se ha creado un objeto");
+		}
+
+       arrancar() {
+       	document.write("Este auto tiene 1000 kilometros recorridos")
+       }
+
+       
+       marca(){
+       	alert(this.modelo+" es un buen modelo de carro");
+       }
+
+
+	}
+
+	var ferrari=new Auto
+	ferrari.arrancar();
+
+    
+
+	let susuki=new Auto("Susuki",10);
+	susuki.marca();
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Objetos de una Clase</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//Los objetos de una clase se crean como si fueran una variable
+
+	class Persona{
+
+		 constructor(){
+
+		 }
+
+           
+           saludar(){
+           	document.write("Hola Aaron");
+           	console.log("Mi edad es 25 años");
+
+
+           }
+
+           adios(){
+           	alert("Adios");
+
+           }
+	}
+
+//afuera de la clase creo el objeto con el nombre que nosotros querramos y luego la instaciamos(otorrgar a esta variable todos los atributos y funciones de una clase) con la palabra new y a lado ponemos el nombre de la clase
+	var Aaron=new Persona;
+
+//para llamar una funcion o un atributo para que use mi objeto simplemente ponemos el nombre del obejto seguido del punto y luego ponemos el nombre de la funcion o el atributo a la que queremos utilizar
+Aaron.saludar();
+Aaron.adios();
+
+</script>
+</body>
+</html>
