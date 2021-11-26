@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<form>
+		<label>Ingres su nombre: </label>
+		<input type="text" id="nameMio" >
+		<br>
+		<input type="button" value="Aceptar" onclick="mostrar()">
+
+	</form>
+
+<script type="text/javascript">
+	// Esta funcion lo que hace es obtner un elemento por su id y una vez que lo tenga podremos manipularle por medio de javascript
+
+	function mostrar () {
+		var nombre=document.getElementById('nameMio').value    // esta funcion me permitira obtner lo que tenga una elemento de HTML para que podamos usarlo en javascript
+
+		alert("El nombre que ingresaste es: "+nombre)
+	}
+</script>
+</body>
+</html>

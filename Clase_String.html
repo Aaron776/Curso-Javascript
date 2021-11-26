@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	//La Clase String nos va ayudar crear cadenas de caracteres, una de las funcionalidades de la clase string es que nos permite la concatenacion
+
+	
+    var nombre="Aaron"
+    var apellido="Ortiz";
+    
+    var nombreCompleto="Tu nombre es "+nombre+" y tu apellido es "+apellido
+    var name=nombre+" "+apellido
+
+    console.log(nombreCompleto)
+	document.write(nombreCompleto)
+	alert(nombreCompleto)
+
+	console.log(name)
+	document.write(name)
+	alert(name)
+
+
+	//Podemos conocer el anho de nuestra cadena de caracteres
+
+     document.write("<br>")
+	document.write("La cantidad de carcteres de tu palabra es: "+nombre.length)
+
+	// La funcion charAt nos devuelve el caracter de una posicion dada, para eso dentro del parentesis de esa funcion indicamos con un numero que posicion queremos obtener el caracter
+
+	document.write("<br>")
+	document.write("El valor del caractere en esa posiscion es: "+nombre.charAt(2))
+
+
+	// La funcion toUpperCase lo que hace es devolvernos las cadena de caracteres en mayusculas
+	document.write("<br>")
+	document.write("La cadenas de caracteres en mayusculas es: "+nombre.toUpperCase())
+
+	// La funcion toLowerCase lo que hace es devolvernos las cadena de caracteres en mayusculas
+	document.write("<br>")
+	document.write("La cadenas de caracteres en minusculas es: "+nombre.toLowerCase())
+
+
+
+
+
+	/*function saludar(nombre){
+		console.log("Hola mucho gusto: "+nombre)
+		document.write("Hola mucho gusto: "+nombre)
+		alert("Hola mucho gusto: "+nombre)
+
+	}
+
+	saludar("Aaron Ortiz")*/
+</script>
+</body>
+</html>
