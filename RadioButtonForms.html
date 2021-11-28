@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form>
+		<input type="radio" id="color1" name="frutas"> Azul  <!--El atributo name se usa en los radio buttons para que que solo se pueda seleccionar uno-->
+		<br>
+		<input type="radio" id="color2" name="frutas"> Amarillo
+		<br>
+		<input type="radio" id="color3" name="frutas"> Rojo
+		<br>
+		<button onclick="verificar()">Verificar</button>
+	</form>
+
+<script type="text/javascript">
+	function verificar(){
+		if (document.getElementById('color1').checked) {
+			alert("El valor Azul esta seleccionado");
+
+		}if (document.getElementById('color2').checked) {
+			alert("El valor Amarillo esta seleccionado");
+
+		}if (document.getElementById('color3').checked) {
+			alert("El valor Rojo esta seleccionado");
+		}
+
+	}
+</script>
+</body>
+</html>

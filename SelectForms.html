@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<form>
+	<select id="seleccion" onchange="verificar()"> <!--en una etiqueta select se usa el evento onChnage para saber que elemento selecciono el usuario-->
+		<option value="">Enero</option>
+		<option value="febrero">Febrero</option>
+		<option value="marzo">Marzo</option>
+	</select>
+</form>
+
+<script type="text/javascript">
+	function verificar(){
+		let mes=document.getElementById('seleccion')
+
+		let indiceSeleccionado=mes.selectedIndex; //aqui esto obteniendo el indice del elemento seleccionado del select ya que estos trabajan como si fueran listas
+
+		let valor=mes.options[mes.selectedIndex].text //aqui ya estoy obtiendo el valor del elemento de ese indice
+		alert("El mes que usted selecciono fue el siguiente: "+valor)
+	}
+
+
+</script>
+</body>
+</html>

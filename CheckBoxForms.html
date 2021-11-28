@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form>
+		<input type="checkbox" id="pais1"> Ecuador
+		<br>
+		<input type="checkbox" id="pais2"> Mexico
+		<br>
+		<input type="checkbox" id="pais3"> Brasil
+        <br>
+		<button onclick="verificar()">Verificar</button>
+	</form>
+
+
+<script type="text/javascript">
+	function verificar(){
+		if (document.getElementById('pais1').checked) {
+			alert("El valor  Ecuador esta seleccionado");
+
+		}if (document.getElementById('pais2').checked) {
+			alert("El valor  Mexico esta seleccionado");
+
+		}if (document.getElementById('pais3').checked) {
+			alert("El valor que Brasiñ esta seleccionado");
+		}
+
+		
+		
+	}
+</script>
+</body>
+</html>

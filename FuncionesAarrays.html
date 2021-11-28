@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+						// Funciones De Arrays
+
+// Metodo push():Este metodo pemite agregar un elemento o varios elementos a nuestro array pero se van a poner al final, en los paretesis ponemos los elemento que queremos agregar
+ let frutas=["manzana","platano","pera"];
+ frutas.push("sandia","naranja")
+ console.log(frutas)
+
+//Metodo pop():Esteb metodo lo que hace es eliminar el ultimo elemento de una lista y devurleve ese elemnto borrado
+ var carros=[1,2,3,4,5]
+ carros.pop()
+ console.log(carros)
+ /*var elementoEliminado=carros.pop() //si queremos obtner el elemento que fue eliminado es recomnsable guardarlo en una variable
+console.log(elementoEliminado)*/
+ 
+
+ //Metodo shift():Este metodo lo que hace es eliminar el primero elemento de una lista y devurleve ese elemnto borrado
+ const colores=["azul","rojo","verde","negro"]
+ colores.shift()
+ console.log(colores)
+
+ //Metodo unshift():Este metodo lo que hace es que nos permite ingresar un elemento o varios  una lista y los pone al principio en los paretesis ponemos los elemento que queremos agregar
+  let numeros=[2.3,3,4.5,6]
+  numeros.unshift(7,8)
+  console.log(numeros)
+
+  //Metodo slice():Este metodo lo que permite hacer es devolver una copia de una parte de un array empezando por un inicio hasta un fin, en los paretesis ponemos el numero del indice inicio y luego el numero de indice fin
+  let ciudades=["Quito","Cuenca","Latacunga","Guayaquil","Manabi"];
+  let nuevoArreglo=ciudades.slice(0,4)
+  console.log(nuevoArreglo)
+
+  //Metodo splice():Este metodo lo que permite hacer es cambiar el contenido de un array eliminando los elemntos existentes y/o agregando nuevos elementos, en el paretesis primero se pone el numero del indice del elemento inicial, luego ponemos el paremtro el numero de elementos que queremos eliminar apartir del elemnto incial que pusimos
+   const jugadores=["Messi","Ronaldo","Iniesta","Xaxi","Sergio Ramos","Alex Aguinaga"];
+   let nuevoArreglo2=jugadores.splice(1,3)
+   console.log(nuevoArreglo2)
+
+
+   //Metodo join():Este metodo lo que permite hacer agregar un elemento que se ubicara en medio de los elementos del array, en el paretesis debemos poner  el obejto que queremos añadir, este metodo modfica el arreglo para obtener un nuevo array
+
+   var array=["Aaron","Dagmar","Rosario"]
+   let nuevoArreglo3=array.join("->")
+   console.log(nuevoArreglo3)
+
+
+
+</script>
+</body>
+</html>
