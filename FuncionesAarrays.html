@@ -10,6 +10,11 @@
 <script type="text/javascript">
 						// Funciones De Arrays
 
+//Metodo length:Este metodo devuelve la cantidad de elementos que hay en un arreglo
+ const hola=[1,2,3,4]
+ console.log(hola.length)
+
+
 // Metodo push():Este metodo pemite agregar un elemento o varios elementos a nuestro array pero se van a poner al final, en los paretesis ponemos los elemento que queremos agregar
  let frutas=["manzana","platano","pera"];
  frutas.push("sandia","naranja")
@@ -49,6 +54,84 @@ console.log(elementoEliminado)*/
    var array=["Aaron","Dagmar","Rosario"]
    let nuevoArreglo3=array.join("->")
    console.log(nuevoArreglo3)
+
+
+   //Metodo Array.isArray():ESte metodo va a comprobar si la varible que creamos es un arreglo o no, este metodo va a devolver un true o un false, dentro del parentesis ponemos la variable la cual queremos comprobar
+
+   const mezcla=[1,14,15,32]
+   console.log(Array.isArray(mezcla))
+
+
+   //Metodo includes():Este metodo nos va aservir para comprobar si un elemento o varios elementos estan dentro un arreglo,dentro del apretesis ponemos el nombre de elemento que queremos buscar y este metodo devolvera un true o un false
+
+   let perros=["perro1","perro2","perro3","perro4"]
+   console.log(perros.includes("perro5"))
+
+   //Metod infexOf(): Este metodo nos va a devolver la posicion o el indice de un elemento del arreglo, en el parentesis ponemos el elemento del arreglo
+
+   var ropa=["camisas","pantalones","corbatas","faldas"]
+   console.log(ropa.indexOf("camisas"))
+
+   
+   //Metodo fill():Este permite modificar un arreglo con un elelemtos que nosotros elijamos poner, en el parentesis primero ponemos el elemento por el cual queremos reemplazar y luego ponemos desde donde a donde queremos remplazarlos usando los indices o posiciones
+
+   var numbers=[0,1,3,100,120];
+   var nuevoArreglo4=numbers.fill("Z",0,2)
+   console.log(nuevoArreglo4)
+
+
+   //Metodo sort():Este metodo lo que hace es order los elemento de un arreglo de forma alfabetica
+   let orden=["d","b","a","c"]
+   console.log(orden.sort())
+
+
+
+   //Metodo reverse():Este metodo lo que hace es dar la vuelta a un arreglo
+   let reverso=["Jose","Bryan","Aaron","Maria"]
+   console.log(reverso.reverse())
+
+
+   //Metodo filter(): Este metodo lo que permite hacer es crear un nuevo arreglo que cumplan una cierta condicion, dentro de los paretesis se debe poner una funcion
+
+   let paises=["Ecuador","Chile","Colombia"]
+   var nuevoArreglo4=paises.filter(function verificar(pais){   //esta funcion dentro del filter debe tener un parametro que recorrera cada elemento del arreglo para verficar los  si cumplen con la condicion que creamos en la funcion
+    return pais=="Ecuador" || pais=="Chile"
+   })
+
+   console.log(nuevoArreglo4)
+
+
+   //Metodo map():Este metodo lo que permite hacer es crear un nuevo arreglo con los resultados de una funcion, en otras palabras permite modficar o relaizar operacion con cada elemento dentro de un array .Las funciones dentro del este metodo pueden tener un solo argumento o dos maximo, el primero sera el que tendra  a cada uno de los elementos  que estan dentro del arreglo y el segundo aparemtro tendra el indice de cada uno de esos elementos
+
+   var decimales=[1,2,3,4,5]
+   let nuevoArreglo5=decimales.map(function (element){  // esta funcion lo que hace es multiplicar a cada elemento del arreglo por dos
+    return element*2
+
+   })
+   console.log(nuevoArreglo5)
+
+
+   var decimales2=[10,20,30,40,50]
+   let nuevoArreglo6=decimales2.map(function (element,index){  // esta funcion lo que hace es mostrar los elementos del arreglo y su indice solo para ver que el primer argument llamado element contiene los elementos del arreglo y el segundo argumento llamado index contiene los indices o posiciones de esos elementos del arreglo
+     return element
+     return index
+   })
+   console.log(nuevoArreglo6)
+
+
+
+    var decimales3=[100,200,300,400,500]
+   let nuevoArreglo7=decimales3.map(function (element){  // esta funcion lo que hace es sacar la rais caudrada de cada elemento dentro del arreglo
+    return Math.sqrt(element)
+
+   })
+   console.log(nuevoArreglo7)
+
+
+
+
+
+
 
 
 

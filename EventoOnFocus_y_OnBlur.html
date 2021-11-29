@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form>
+		<input type="text" id="nombre" onfocus="vaciar(this)" onblur="verificarEntrada(this)" value="Aaron ortiz">
+		<br>
+		<input type="text" id="email" value="aronortiz90@yahoo.com" onfocus="vaciar(this)" onblur="verificarEntrada(this)">
+		<br>
+	</form>
+
+<script type="text/javascript">
+	//El evento onFocus se va a ejecutar cuando el elemento de nuestra pagina toma foco o se centra en ese elemento
+	 function vaciar(control){  //esta funcion lo que hace es limpiar el input para que quede 								vacio cuando se le enfoca o selecciona
+	 	control.value="";
+	 }
+
+	//El evento onBlur en cambio se va a ejecutar cuando se pierde el enfocaiento de un elemento
+
+	function verificarEntrada(control){
+        if (control.value=="") {
+        	alert("Debes ingresar datos")
+        }
+	}
+</script>
+</body>
+</html>

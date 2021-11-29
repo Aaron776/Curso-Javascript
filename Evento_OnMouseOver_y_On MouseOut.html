@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<a href="" onmouseover="pintar('red')" onmouseout="cambiar('black')">Rojo</a>
+	<br>	
+	<a href="" onmouseover="pintar('blue')" onmouseout="cambiar('yellow')">Azul</a>	
+	<div id="cuadrado" style="background: green; width: 400px; height: 400px;"></div>
+
+<script type="text/javascript">
+	//El evento onmouseover ser activa cuando pasamos el mouse sobre un elemento
+     function pintar(color){
+     	document.getElementById('cuadrado').style.backgroundColor=color //en esta funcion lo que hago es que al elemento que recibo con ese id le aplico un color cuando pongo el mouse encima
+     }
+
+
+	//El evento onmouseout se activara cuando quitemos el mouse de un elemento
+      function cambiar(color){
+        document.getElementById('cuadrado').style.backgroundColor=color //en esta funcion lo que hago es que al elemento que recibo con ese id le aplico un color cuando quito el mouse 
+      }
+
+
+</script>
+</body>
+</html>

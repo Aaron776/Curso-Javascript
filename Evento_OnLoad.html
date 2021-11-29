@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body onload="activarFoco()">
+	<form>
+		<label>Ingrese su nombre: </label>
+		<input type="text" id="nombre">
+		<br>
+		<label>Ingrese su Edad: </label>
+		<input type="number" id="edad">
+		<br>
+		<button>Confirmar</button>
+	</form>
+<script type="text/javascript">
+	//El evento onLoad va a funcionar cuando nosotros querramos cargar una pagina en nuestro navegador o algo por ese estilo
+
+	function activarFoco(){
+		document.getElementById('nombre').focus() // esta funcion lo que hace es que cuando carga la pagina se activara el foco en el input con el id que pusimos
+
+		let sumar=1+2; // esto le puse de añadidura y es que cuando se carga de pagina se mostrar el resultado de esa suma
+		alert(sumar)
+	}
+</script>
+</body>
+</html>

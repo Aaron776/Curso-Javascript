@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form>
+		<label>Ingrese un Comentario: </label>
+		<br>
+		<textarea id="mensaje" rows="5" cols="10"></textarea> <!--El atributo rows van a ser las filas que nosotros vamos a permitir que existan en esa TexArea y lo mismo aplica para el cols que son el numero de columnas o caracteres-->
+		<br>
+		<button onclick="recibir()">Enviar</button>
+	</form>
+
+<script type="text/javascript">
+	function recibir(){
+       var message=document.getElementById('mensaje').value
+       alert(message)
+       document.write(message)
+	}
+</script>
+</body>
+</html>
