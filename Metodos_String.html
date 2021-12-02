@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+					//Metodos String
+
+// Metodo lenght(): Este metodo nos muestra la longitud o cantidad de caracteres de un string
+let cadena="Hola Mundo"
+var guardar= cadena.length
+console.log("La cadena tiene una longitud de: "+guardar)
+
+
+//Metodo indexOf(): Este metodo busca un elemento dentro de la cadena (letra o palabra) y nos devuleve el indice o ls posicion en donde se encuentra, en el parentesis ponemos la plabara que queremos buscar
+var cadena1 = "El perro duerme";
+var indice = cadena1.indexOf("perro"); 
+console.log("La palabra esta en el indice: "+indice)
+
+
+//Metodo charAt(): Permite acceder a un carácter en concreto de una cadena, en el parentesis ponemos la pocision o el indice de ese elemento de la cadena
+var cadena2 = "Hola que tal";
+console.log(cadena2.charAt(2));
+
+
+//Metodo repeat(): Devuelve un String con el número de copias de la cadena especificado dentro del parentesis, dentro del parentesis ponemos la cantidad de veces que queremos que se repita esa cadena
+var cadena3 = "Adios Perro";
+var resultado = cadena3.repeat(2);
+console.log("El resultado de la cadena copiada es: "+resultado);
+
+
+//Metodo search(): Busca una coincidencia (palabra) en una cadena y devuelve la posición o indice de la coincidencia, en el parentesis ponemos la plabra que queremos buscar
+var cadena4="Hola Jesus mio"
+let resultado1=cadena4.search("mio")
+console.log("La pocision donde esta la palabra buscada es: "+resultado1)
+
+
+//Metodo replace(): Este metodo lo que hace es reemplazar una palabra o una cadena de palabras dentro de otro arreglo, el paretesis ponemos primero la plabara por la cual queremos reemplazar y luego ponemos la palabra a la que queremos reemplzar
+const p = 'El boxeador es muy malo';
+console.log(p.replace('boxeador', 'futbolista'));
+
+
+// Metodo match(): Busca una coincidencia en una cadena y devuelve todas las coincidencias encontradas
+const palabra = 'El buceador nado mucho a diferencia del otro buceador';
+console.log(palabra.match('buceador'));
+
+//Metodo slice(): Extrae una parte de una cadena en base a los parámetros que indiquemos como índices de inicio y final.
+var nombre = "Aaron";
+var masculino = nombre.slice(1, 3);
+console.log("El rango va de y hasta: "+masculino)
+
+//Metodo includes(): Este metodo nos dice si una palabra esta dentro de una cadena, en el apretesis ponemos la labara que queremos buscar
+var cadena5="Pepito feliz"
+console.log(cadena5.includes("feliz"))
+
+
+//Metodo toLowerCase(): Devuelve la cadena en minúsculas.
+var cadena6="HOLA"
+console.log("La cadena es minusculas queda asi: "+cadena6.toLowerCase())
+
+
+//Metodo toUpperCase()	Devuelve la cadena en mayúsculas.
+var cadena7="carlos"
+console.log("La cadena es mayusculas queda asi: "+cadena7.toUpperCase())
+</script>
+</body>
+</html>
