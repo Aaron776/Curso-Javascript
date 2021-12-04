@@ -10,20 +10,59 @@
 <script type="text/javascript">
 	// esta clase Date lo que es o no sirve para tener fechas o guardar fechas
 
-     
+    
+    //Objeto de la Clase Date:ponemos el nombre de la variable y luego la instaciamos con la clase Date()
 
-    //Obejto de la Clase Date:ponemos el nombre de la variable y luego la instaciamos con la clase Date()
-	fecha0=new Date();
+    //El metodo new Date() nos devuleve la fecha actual
+	fecha_actual=new Date();
+	alert("La fecha de hoy es: "+fecha_actual)
 
     
+    //Dentro del parentersis del new Date podemos poner una fecha que nosotros querramos
 	navidad=new Date(2021,12,25);
+	alert("Navidad es el : "+navidad)
+
+
 
 	//Metodos de esta clase Date: getYear,setYear,getFullYear,setFullYear,getMonth,setMonth,getHour,setHour,getMin,setMin,getDay
 
+	//El metodo getTime() permite obtener el tiempo actual en milisegundos delsde 1970  hasta la fecha actual
+    var milisegundo= fecha_actual.getTime()
+    alert("La cantidad de milisegundos hasta la fecha es: "+milisegundo)
+
+
+	//El metodo getDate() permite obtener el numero del dia actual en que me encuentro ( va del 1 al 30 o 31 dependiendo cuantos numeros tiene ese mes de dias)
+    var date= fecha_actual.getDate()
+    alert("El dia de hoy es: "+date)
 	
+
+    //El metodo getDay() permite obtener el numero del dia actual en que me encuentro (del 0 a 6 que corresponde del Lunes a Domingo)
+    var dia= fecha_actual.getDay()
+    alert("El dia de hoy es (0-6): "+dia)
+
+
+    //El metodo getMonth() permite obtener el numero del mes actual en que me encuentro (del 0 a 11 que corresponde el numero de meses que hay en el año)
+    var mes= fecha_actual.getMonth()
+    alert("El mes actual es: "+mes)
+
+
+    //El metodo getFullYear() permite obtener el numero del año actual en que me encuentro 
+    var año= fecha_actual.getFullYear()
+    alert("El año actual es: "+año)
+
+
+    //El metodo getHours() permite obtener el numero de la hora actual en que me encuentro 
+    var hora= fecha_actual.getHours()
+    alert("La hora actual es: "+hora)
+
+    //El metodo getMinutes() permite obtener el numero de minutos de la hora actual en que me encuentro 
+    var hora_minutos= fecha_actual.getMinutes()
+    alert("Los minutos de la hora actual es: "+hora_minutos)
+
+
 	var fecha=new Date()
 	document.write("Hoy es ")
-	document.write(fecha.getDate()+"/");
+	document.write(fecha.getDate()+"/"); // el metodo getDate
 	document.write((fecha.getMonth())+1+"/"); // lo meses en javascript se cuentan desde el o hasta el 11 por eso si queremos la fecha actual debemos sumarle un +1
 	document.write(fecha.getFullYear());
 

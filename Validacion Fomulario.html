@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="caja"></div>
+	<form name="miForm" onsubmit="return validar();" action="validar.php" method="POST"> <!--podriamos usar el evento onsubmit y en el submit le pongo el retunr para que no se envie el fomrulario esto es opcional-->
+		<label>Usuario:</label>
+		<input type="text" name="nombre_usuario">
+		<br>
+		<label>Contraseña:</label>
+		<input type="password" name="contra">
+		<br>
+		<input type="checkbox" name="cajita"> Masculino
+		<div id="info"></div>
+		<br>
+
+		<button type="submit">Enviar</button>
+		
+	</form>
+
+<script type="text/javascript">
+	//el metodo forms nos sirve para tener una referecia de todos los formularios de nustra pagina, en los corchetes primero poenmos el nombre del formualrio que queremos validar y luego poenmos el nombre de la etiqueta name del campo que queremos validar
+
+	function validar(){
+    	 var texto;
+     	var usuario=document.forms["miForm"]["nombre_usuario"].value   //tambien podriasmos usar el getElementById() pero para este caso aprenderemos el metodo forms que usa la propiedad name
+     	var contraseña=document.forms["miForm"]["contra"].value
+     	var casilla=document.forms["miForm"]["cajita"].checked // el metodo checked se palica para el input del tpo checkbox para saber si ha sido seleccionada alguna opcion
+
+     	if (usuario==null || usuario==""  ) {
+     	texto="Por favor llene el campo"
+     	document.getElementById('caja').innerHTML=texto
+     	return false;
+
+     	} else if (usuario.length<3){
+     	texto="El usuario debe tener mas de 3 caracteres"
+     	document.getElementById('caja').innerHTML=texto
+     	return false; // ponemos el return false para que no se envie el fomrulario a ningun lado esto es opcional porque en este ejemplo ponemos que se envie al archivo validar.php
+     	
+     	} else if (casilla==false){
+     		texto="El elemento no ha sido seleccionado"
+     		document.getElementById('info').innerHTML=texto
+     		return false;
+     		
+     	} else if (contraseña=="") {
+     		texto="Por favor ingrese alguna contraseña"
+     		document.getElementById('caja').innerHTML=texto
+     		return false;
+     	}
+
+
+
+	}
+
+</script>
+</body>
+</html>

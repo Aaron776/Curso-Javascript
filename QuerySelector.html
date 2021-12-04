@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<a href="www.google.com">Google</a>
+	<br>
+	<a href="www.youtube.com" class="miLink">Youtube</a>
+	<br>
+	<a href="www.codigomentor.com" class="miLink1">CodigoMentor</a>
+	<br>
+	<a href="www.yahoo.com" id="miLink2">Yahooo</a>
+	<br>
+	<br>
+	<button onclick="miFuncion()">Haz Click</button>
+
+<script type="text/javascript">
+	/* El metodo querySelector() se encarga de enfocarse en el primer elemento  que tenga un Id, una clase,name o un selector de css
+	el metodo querySelector es parecido al metodo getElementById pero se diferecnia que puede usarse usando ademas del Id tambien una clase o un selector css o un name*/
+
+     function miFuncion(){
+         document.querySelector(".miLink").style.backgroundColor="yellow" //dentro del parentesis ponemos el nombre de la clase o del id pero hay que especifiar: si es una clase ponemos un punto seguido del nombre y si fuera un Id ponemos un # seguido del nombre
+
+         //En este ejemplo de funcion a pesar de que en los links hay tres links con la clase "miLink" con el querySelector solo selecciona el primero que encuentra
+
+
+         document.querySelector("a[class='miLink1']").style.backgroundColor="green" // aqui uso el querySelector con un selector css dentro de los corchetes
+
+        
+
+        var elemento= document.querySelector("#miLink2") //Una forma de escribir codigo mas eficiente es guardar el querySelector en una variable y en la variable podemos poner el estilo por ejemplo
+        elemento.style.border="3px solid black"
+        elemento.style.backgroundColor="red"  // el metodo .style sirva para agregar un estilo css al elemento que tiene ese id o clase
+
+
+     }
+
+
+</script>
+</body>
+</html>

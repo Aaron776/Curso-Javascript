@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<a href="www.google.com">Google</a>
+	<br>
+	<a href="www.youtube.com" class="miLink">Youtube</a>
+	<br>
+	<a href="www.codigomentor.com" class="miLink">CodigoMentor</a>
+	<br>
+	<a href="www.yahoo.com"  class="miLink" >Yahoo</a>
+	<br>
+	<br>
+	<button onclick="miFuncion()">Haz Click</button>
+
+<script type="text/javascript">
+	//El metodo querySelectorAll() permite retornar los elementos que tengan un clase o selector css en comun
+
+	//Podemos ver que los tres links tienen el mismo nombre de la clase
+	
+	function miFuncion(){
+     var elementos=document.querySelectorAll(".miLink")
+     console.log(elementos.length) // en este console log me dice cuantos links hay con esa clase
+
+     for (var i=0;i<elementos.length;i++) {
+     	elementos[i].style.backgroundColor="yellow"  // aqui estoy cambiando el color de fondo de los links que tienen esa clase en comun
+     }
+
+	}
+
+</script>
+</body>
+</html>

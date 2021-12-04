@@ -4,23 +4,26 @@
 	<meta charset="utf-8">
 	<title>Funciones</title>
 	<script type="text/javascript">
-		//El return o retorno de valor en las funciones nos sirven para devolver un resultado o un valor
+		//El return o retorno de valor en las funciones nos sirven para devolver un resultado o un valor pero no se imprime en la pantalla
 
 		function Sumar(numero1,numero2){
 			var respuesta=numero1+numero2;
+			return respuesta;
+		}
+
+		//Una forma de imrimir la respuesta de esa funcion en caso de  tener un return
+		alert("La respuesta de la suma de la funcion es: "+Sumar(1,2) );
+
+
+		//Otra forma de imrimir la respuesta de esa funcion 
+		  function Restar(numero1,numero2){
+			var respuesta=numero1-numero2;
 			return respuesta;
 			alert(respuesta);
 
 		}
 
-
-
-		//Una forma de imrimir la respuesta de esa funcion en caso de solo tener un return
-		alert("La respuesta de la suma de la funcion es: "+Sumar(1,2) );
-
-
-		//Otra forma de imrimir la respuesta de esa funcion
-		  Sumar(1,4);
+		  Restar(1,4);
 		
           
 

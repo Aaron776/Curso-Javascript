@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<button onclick="comenzar()">Comenzar</button>
+	<button onclick="detenerse()">Detenerse</button>
+<script type="text/javascript">
+//El metodo setTimeout() lo que hace es que permite ejecutar una funcion dentro de un determinado lapso de tiempo dentro del parentesis pasamos dos argumentos el primero es la funcion que queremos ejecutar y el segundo paarmetro es el tiempo cuando queremos que se ejecute
+
+setTimeout(mensaje,3000) // la funciuon mensaje se ejecutar dentro de 3 segundos
+
+function mensaje(){
+	alert("Esta es una prueba")
+}
+
+
+
+//El metodo clearTimeout()  en cambio se encarga de detener la ejecucion de una funcion en un determinado lapso de tiempo
+
+function comenzar(){
+	var ejecutar=setTimeout(function(){
+		alert("Hola")
+	},4000)
+	
+}
+
+
+function detenerse(){
+	clearTimeout(ejecutar)
+}
+</script>
+</body>
+</html>

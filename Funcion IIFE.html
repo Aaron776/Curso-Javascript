@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//La funcion IIFE va a ser un funcion anonima la cual va a ser ejecutada por si misma, para crear una funcion IIFE los hacmoes como si fuera una funcion normal pero a esta funcion le encerramos en unos parentesis, para llamar esa funcion ponemos parentesis despues de que termine la funcion
+
+	(function () {
+		document.write("Esta es una funcion IIFE <br>")
+	})();
+
+
+
+	(function (a,b) {
+		var resultado=a+b
+		document.write("La suma es: "+resultado+"<br>")
+	})(1,3);
+
+
+	//Podriamos tener una funcion IIFI como valor de una variable
+
+	var mensaje=(function(){
+		return("Yo soy una Funcion ")
+	}())
+
+	document.write(mensaje) 
+
+
+document.write("<br>") 
+
+	//Nota Adicional: Si dentro de una variable almacenamos una funcion que hace una operacion para impimir en pantalla ese resultado imprimimos la variable y le ponemos parentesis
+	var resultado= function(){
+		var sumar=1+3
+		return sumar
+	}
+
+	document.write(resultado())
+
+
+
+</script>
+</body>
+</html>

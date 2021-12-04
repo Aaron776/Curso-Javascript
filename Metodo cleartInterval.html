@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//El metodo clearInterval() sirve para detener la ejecucion de la funcion que se ejecuta en un intervalo de tiempo de acuerdo a una condicion que nosotros pongamos
+
+let contador=0
+var ejecutar= setInterval(mensaje,3000)
+
+function mensaje(){
+	contador++
+	document.write("Hola Mundo <br>")
+	
+
+	if(contador==6){
+		clearInterval(ejecutar)
+	}
+}
+</script>
+</body>
+</html>

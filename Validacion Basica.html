@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<input type="text" id=caja>
+	<br>
+	<button onclick="validar()">Enviar</button>
+	<div id="info"></div>
+
+<script type="text/javascript">
+	
+	function validar(){
+		var texto;
+		var numero=document.getElementById('caja').value // el punto value permite obtener el valor del input que tiene ese id que ponemos en los parentesis
+
+		if (isNaN(numero)|| numero<1 || numero>8){
+			texto="<span style='color:green'> Valor no permitido  </span>"
+
+		}else{
+			texto="<span style='color:red'> Valor valido </span>"
+		}
+
+	document.getElementById('info').innerHTML=texto //innerHTML es una propiedad que nos permite leer un dato o asignarlo al contenido de un div, en este ejemplo al div con el id info le agregamos lo que dice la variable texto
+
+	// la funcion isNaN() esta funcion permite verificar si el valor que ingresamos en el input es realmente un numero porque que ingresemos una palabra o un caracter y eso no seria valido
+	}
+</script>
+</body>
+</html>
