@@ -80,12 +80,6 @@ console.log(elementoEliminado)*/
    console.log(nuevoArreglo4)
 
 
-   //Metodo sort():Este metodo lo que hace es order los elemento de un arreglo de forma alfabetica
-   let orden=["d","b","a","c"]
-   console.log(orden.sort())
-
-
-
    //Metodo reverse():Este metodo lo que hace es dar la vuelta a un arreglo
    let reverso=["Jose","Bryan","Aaron","Maria"]
    console.log(reverso.reverse())
@@ -129,8 +123,103 @@ console.log(elementoEliminado)*/
 
 
 
+   /*Metodo sort():Este metodo lo que hace es order los elemento de acuerdo a como nosotros necesitemos y para eso usamos funciones dentro de los parentesis y esa funcion debe tener dos parametros(a,b) ya que van a servir de comparacion
+    
+  Dependiendo del resultado de esa comparación se deben devolver valores numéricos, atendiendo a estas reglas:
+
+Si son iguales, devolveremos 0.
+Si "a" debe ir ordenado antes que "b", entonces devolvemos un número menor que 0.
+Si "a" debe ir ordenado después que "b", entonces devolvemos un número mayor que 0.*/
+   
+   let orden=["d","b","a","c"] 
+   console.log(orden.sort())
 
 
+  let ordenar = [7, 5, 44, 101, 55, 60, 82, 1, 57, 6]; // aqui ordeno los valores de ascedente
+  const asc= ordenar.sort(function(a, b) {
+  if(a == b) {
+    return 0; 
+  }
+  if(a < b) {
+    return -1;
+  }
+  return 1;
+});
+
+  console.log(asc)
+
+let ordenar2 = [7, 5, 44, 101, 55, 60, 82, 1, 57, 6]; // aqui ordeno los valores de descendente
+const desc=ordenar2.sort((a, b) => {
+  if(a == b) {
+    return 0; 
+  }
+  if(a > b) {
+    return -1;
+  }
+  return 1;
+});
+
+console.log(desc)
+
+
+let words = ["hola", "adiós", "gusta", "quiero", "ordenar", "arrays"]; //ordenado de forma alfabetica
+var alfa=words.sort((a, b) => {
+  if (a == b) {
+    return 0;
+  }
+  if (a < b) {
+    return -1;
+  }
+  return 1;
+});
+
+console.log(alfa)
+
+
+
+//En este jemplo de objetos vamos a ordenar los elementos de acuerdo a la edad y si dos personas tiene la misma edad se ordenara por su nombre
+let people = [
+  {
+    name: 'Julia',
+    age: 10,
+  },
+  {
+    name: 'Miguel',
+    age: 45,
+  },
+  {
+    name: 'Juan',
+    age: 24,
+  },
+  {
+    name: 'María',
+    age: 60,
+  },
+  {
+    name: 'Alfredo',
+    age: 45,
+  },
+  {
+    name: 'Alba',
+    age: 10,
+  },
+];
+var personas=people.sort( (a, b) => {
+  if(a.age < b.age) {
+    return -1;
+  }
+  if(a.age > b.age) {
+    return 1;
+  }
+  if (a.name.toLowerCase() < b.name.toLowerCase()) {
+    return -1;
+  }
+  if (a.name.toLowerCase() > b.name.toLowerCase()) {
+    return 1;
+  }
+  return 0;
+});
+console.log(personas);
 
 
 
