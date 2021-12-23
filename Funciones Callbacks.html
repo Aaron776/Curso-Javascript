@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//Las Funciones callbacks son  una función que recibe como argumento otra función y la ejecuta. Así, la función contenedora elige cuándo ejecutar el callback, en la funcion que va arecibir como argumento la funcion callback debemos poner la palabra callback en los parentesis
+
+	function saludar(callback) {
+		alert("Hola Mundo")
+		callback()
+	}
+
+	function despedir(){
+		alert("Adios")
+	}
+
+// Al momento de llamar a la funcion que va a contener la funcion callback dentro del parentesis de la funcion le ponemos el nombnre de la funcion callback pero esta sin parentesis
+	saludar(despedir)
+</script>
+</body>
+</html>

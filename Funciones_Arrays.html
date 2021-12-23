@@ -85,17 +85,33 @@ console.log(elementoEliminado)*/
    console.log(reverso.reverse())
 
 
-   //Metodo filter(): Este metodo lo que permite hacer es crear un nuevo arreglo que cumplan una cierta condicion, dentro de los paretesis se debe poner una funcion
+   //Metodo filter(): Este metodo lo que permite hacer es crear un nuevo arreglo en el cual se iran filtrando o mostrando los elementos del arreglo que cumplan una cierta condicion que nosotros le demos, dentro de los paretesis se debe poner una funcion
 
    let paises=["Ecuador","Chile","Colombia"]
-   var nuevoArreglo4=paises.filter(function verificar(pais){   //esta funcion dentro del filter debe tener un parametro que recorrera cada elemento del arreglo para verficar los  si cumplen con la condicion que creamos en la funcion
-    return pais=="Ecuador" || pais=="Chile"
+   var nuevoArreglo4=paises.filter(function verificar(x){   //esta funcion dentro del filter debe tener un parametro que recorrera cada elemento del arreglo para verficar los  si cumplen con la condicion que creamos en la funcion
+    return x=="Ecuador" || x=="Chile"
    })
 
    console.log(nuevoArreglo4)
 
 
-   //Metodo map():Este metodo lo que permite hacer es crear un nuevo arreglo con los resultados de una funcion, en otras palabras permite modficar o relaizar operacion con cada elemento dentro de un array .Las funciones dentro del este metodo pueden tener un solo argumento o dos maximo, el primero sera el que tendra  a cada uno de los elementos  que estan dentro del arreglo y el segundo aparemtro tendra el indice de cada uno de esos elementos
+   let filtro=["Aaron","Patricio","Dagmar"]
+   let nuevo_Filtro=filtro.filter(function verificar (elemento){
+      return elemento.length>5 
+   })
+
+   console.log(nuevo_Filtro)
+
+
+   var number=[1,2,3,4,5,6,7,8,9,10,22]
+   var new_number=number.filter(function verificar(element){
+      return element>4
+   })
+
+   console.log(new_number)
+
+
+   //Metodo map():Este metodo lo que permite hacer es crear un nuevo arreglo con los resultados de una funcion, en otras palabras permite modificar o realizar operaciones con cada elemento dentro de un array .Las funciones dentro del este metodo pueden tener un solo argumento o dos maximo, el primero sera el que tendra el valor del arreglo  que estan dentro del arreglo y el segundo aparemtro tendra el indice de cada uno de esos elementos
 
    var decimales=[1,2,3,4,5]
    let nuevoArreglo5=decimales.map(function (element){  // esta funcion lo que hace es multiplicar a cada elemento del arreglo por dos
@@ -103,7 +119,6 @@ console.log(elementoEliminado)*/
 
    })
    console.log(nuevoArreglo5)
-
 
    var decimales2=[10,20,30,40,50]
    let nuevoArreglo6=decimales2.map(function (element,index){  // esta funcion lo que hace es mostrar los elementos del arreglo y su indice solo para ver que el primer argument llamado element contiene los elementos del arreglo y el segundo argumento llamado index contiene los indices o posiciones de esos elementos del arreglo
@@ -224,6 +239,7 @@ console.log(personas);
 
 
 
+ 
 </script>
 </body>
 </html>
