@@ -14,24 +14,26 @@ function hola(){
 
 }
 
-// Funcion Flecha: Las funciones flecha normalmente no tienen nombre, las llaves se ponen si dentro de esa funcion va haber muchas operaciones, si solo va haber una operacion no es necesario poner las llaves ademas de que no es necesario usar el return
+// Funcion Flecha: Las funciones flecha normalmente no tienen nombre, las llaves se ponen si dentro de esa funcion va haber muchas operaciones, si solo va haber una operacion no es necesario poner las llaves ademas de que no es necesario usar el return, ademas las funciones arrows para que se ejecuten deben guadarse dentro de variables e imprimi esa variable
  let operacion=()=>{
- 	let numero1=2
- 	let numero2=3
- 	console.log(numero1+numero2)
+ 	const numero1=2
+ 	const numero2=3
+ 	console("El resultado de la operacion es: "+numero1+numero2)
 
  }
 
 
- ()=>console.log("hola")
+ let saludo=()=>console.log("Hola Mundo")
 
  let func= (a,b)=>a+b
  
 
 
- //Para que se ejecuten esa funciones es necesario guardarlas en una variable
- console.log(func(1,2))
+ //Para que se ejecuten esa funciones es necesario guardarlas en una variable y cuando se imrpme esa variable debemos poner las llavaes a lado para que se entienda que esa avariable guarda una funcion
  console.log(operacion())
+ console.log(func(1,2))
+ console.log(saludo())
+ 
 
 </script>
 </body>
