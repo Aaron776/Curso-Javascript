@@ -18,23 +18,58 @@ function hola(){
  let operacion=()=>{
  	const numero1=2
  	const numero2=3
- 	console("El resultado de la operacion es: "+numero1+numero2)
+ 	return "El resultado de la operacion es: "+numero1+numero2
 
  }
 
 
- let saludo=()=>console.log("Hola Mundo")
+ let saludo=()=> "Hola Mundo"
 
  let func= (a,b)=>a+b
  
 
 
  //Para que se ejecuten esa funciones es necesario guardarlas en una variable y cuando se imrpme esa variable debemos poner las llavaes a lado para que se entienda que esa avariable guarda una funcion
- console.log(operacion())
- console.log(func(1,2))
+ document.write(operacion()+"<br>")
+ document.write(func(1,2)+"<br>")
  console.log(saludo())
+
+
+
+ // Función tradicional
+var ejemplo=function (a){
+  return a + 100;
+}
+
+// Desglose de la función flecha
+
+// 1. Elimina la palabra "function" y coloca la flecha entre el argumento y la llave de apertura.
+var ejemplo=(a) => {
+  return a + 100;
+}
+
+// 2. Quita las llaves del cuerpo y la palabra "return" ya que el return pasa a  estar implícito.
+var ejemplo=(a) => a + 100;
+
+// 3. Suprime los paréntesis de los argumentos (los parentesis son opcioanles si solo se tiene un argimento pero en caso de haber mas es necesario el parentesis)
+var ejemplo=a => a + 100;
  
 
+//Del mismo modo, si el cuerpo requiere líneas de procesamiento adicionales, deberás volver a introducir las llaves Más el "return" (las funciones flecha no adivinan mágicamente qué o cuándo quieres "volver"):
+
+// Función tradicional
+var suma=function (a, b){
+  let chuck = 42;
+  return a + b + chuck;
+}
+
+// Función flecha
+var suma=(a, b) => {
+  let chuck = 42;
+  return a + b + chuck;
+}
+
+document.write("El resultado es: "+suma(23,-7))
 </script>
 </body>
 </html>
