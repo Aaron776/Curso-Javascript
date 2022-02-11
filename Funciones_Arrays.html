@@ -237,9 +237,21 @@ var personas=people.sort( (a, b) => {
 console.log(personas);
 
 
-
-
+// Metodo every(): Determina si todos los elementos en el array satisfacen una condición, si cumple esa condicion todos los elementos del arreglo se devurlve un true caso contrario sera un false. Este metodo recibe una funcion que tendra un parametro que sera el que recorra el arreglo comprobando todos los elelemntos si cumplen la condicion que ponemos
+const array1 = [1, 30, 39, 29, 10, 13];
+const comprobar=array1.every(function(elemento){
+  elemento<30
+})
+console.log(comprobar)
  
+
+ //Metodo some(): El método some() comprueba si al menos un elemento del array cumple con la condición implementada por la función proporcionada si cumple esa condicion alguno de los los elementos del arreglo se devurlve un true caso contrario sera un false. Este metodo recibe una funcion que tendra un parametro que sera el que recorra el arreglo comprobando todos los elelemntos si al menos uno cumple la condicion que ponemos.
+
+ const array2 = ["Aaron","Juan","Jose"];
+const comprobar3=array1.every(function(elemento){
+  elemento.length>7
+})
+console.log(comprobar3)
 </script>
 </body>
 </html>
