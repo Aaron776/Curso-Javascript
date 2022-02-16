@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1 id="titulo">HOLA JAVASCRIPT</h1>
+	<button id="boton1">ACCIONAR</button>
+
+<script type="text/javascript">
+	/* El metodo addEventListener() es un escuchador que indica al navegador que este atento a la interacción del usuario, este metodo recibe dos argumentos el primero es el tipo de evento que va Recibir y el segundo parametro es la funcion o el nombre de la funcion  que va a ejecutar
+
+	Los tipos de evento a escuchar, son los eventos ya conocidos de javascript: 
+	blur: Cuando el elemento pierde el foco.
+	click: El usuario hace clic sobre el elemento.
+	dblclick: El usuario hace doble clic sobre el elemento.
+	focus: El elemento gana el foco.
+	keydown:  El usuario presiona una tecla.
+	keypress:  El usuario presiona una tecla y la mantiene pulsada.
+	keyup:  El usuario libera la tecla.
+	load:  El documento termina su carga.
+	mousedown:  El usuario presiona el botón del ratón en un elemento.
+	mousemove:  El usuario mueve el puntero del ratón sobre un elemento.
+	mouseout:  El usuario mueve el puntero fuera de un elemento.
+	mouseover:  El usuario mantiene el puntero sobre un elemento.
+	mouseup:  El usuario libera el botón pulsado del ratón sobre un elemento.
+	unload:  El documento se descarga, bien porque se cierra la ventana, bien porque se navega a otra página.
+	submit: El evento submit se activa cuando el formulario es enviado, normalmente se utiliza para validar el formulario antes de ser enviado al servidor o bien para abortar el envío y procesarlo con JavaScript.
+
+	*/
+
+	
+		document.getElementById('boton1').addEventListener("click",saludar)
+	
+		function saludar() {
+    		alert("HOLA MUNDO")
+		}
+
+
+		document.getElementById('titulo').addEventListener("mousemove",function cambiar(){
+			document.getElementById("titulo").style.backgroundColor = "black"
+			document.getElementById("titulo").style.color = "white"
+			alert("Cambio realizado")
+		})
+	
+		
+</script>
+</body>
+</html>
