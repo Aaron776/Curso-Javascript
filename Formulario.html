@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form>
+		<label>Ingrese Nombre: </label>
+		<input type="text" id="nombre">
+		<br>
+		<label>Ingrese Edad: </label>
+		<input type="number" id="edad">
+		<br>
+		<label>Eliga una opcion: </label>
+		<select  id="estado" onchange="verificar()">
+			<option value="aprobado">Aprobado</option>
+			<option value="desaprobado">Desaprobado</option>
+			<option value="suspenso">Suspenso</option>
+		</select>
+		<br>
+
+		<p id="mensaje"></p>
+		<button onclick="bloquear()" id="enviar">Enviar</button>
+	</form>
+
+
+	<script type="text/javascript">
+		function bloquear(){
+			var nombre=document.getElementById('nombre').value
+			var edad=document.getElementById('edad').value
+			if (nombre=="" || edad==0 ) {
+				document.getElementById('enviar').disabled=true
+				var texto="Ingrese los datos correctamente"
+				document.getElementById("mensaje").innerHTML=texto
+
+		}
+	}
+
+		function verificar(){
+		let estado=document.getElementById('estado')
+
+		let indiceSeleccionado=estado.selectedIndex; //aqui esto obteniendo el indice del elemento seleccionado del select ya que estos trabajan como si fueran listas
+
+		let valor=estado.options[estado.selectedIndex].text //aqui ya estoy obtiendo el valor del elemento de ese indice
+		if (valor=="Desaprobado" || valor=="Suspenso") {
+			document.getElementById('enviar').disabled=true
+			var texto="No esta listo para pasar el semestre"
+			document.getElementById("mensaje").innerHTML=texto
+		}
+	}
+	</script>
+
+</body>
+</html>
