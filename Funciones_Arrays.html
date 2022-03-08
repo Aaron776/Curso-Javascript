@@ -10,9 +10,28 @@
 <script type="text/javascript">
 						// Funciones De Arrays
 
+
 //Metodo length:Este metodo devuelve la cantidad de elementos que hay en un arreglo
  const hola=[1,2,3,4]
  console.log(hola.length)
+
+
+//Metodo find():este metodo devuelve el  primer elemento del array que cumple la función que nosotros especificamos.
+const muchos = [5, 12, 8, 130, 44];
+
+const encontrado = muchos.find(function verificar(element){ 
+  return element > 10
+});
+
+console.log(encontrado);
+
+
+//Metodo forEach(): este metodo recorre todo un arreglo y permite ejecutar una función indicada una vez por cada elemento del array.
+const letras = ['a', 'b', 'c'];
+
+letras.forEach(function verificar(element){
+  console.log(element)
+});
 
 
 // Metodo push():Este metodo pemite agregar un elemento o varios elementos a nuestro array pero se van a poner al final, en los paretesis ponemos los elemento que queremos agregar
